@@ -1,0 +1,156 @@
+// ---------------------------------------------------------------
+// Custom styles for 秋落的博客
+// ---------------------------------------------------------------
+
+// Smooth scroll
+html
+  scroll-behavior smooth
+
+// Post card enhancements
+.post-list-item
+  border-radius 12px
+  overflow hidden
+  box-shadow 0 2px 8px rgba(0,0,0,0.06)
+  transition all 0.3s ease
+
+  &:hover
+    box-shadow 0 4px 16px rgba(0,0,0,0.12)
+    transform translateY(-2px)
+
+// Sidebar card enhancements
+.sidebar
+  .sidebar-inner
+    border-radius 12px
+    box-shadow 0 2px 8px rgba(0,0,0,0.06)
+
+// Post content card
+.post-block
+  border-radius 12px
+  box-shadow 0 2px 8px rgba(0,0,0,0.06)
+
+// Smooth transition for all interactive elements
+a
+  transition color 0.3s ease
+
+// Code block enhancements
+figure.highlight
+  border-radius 8px
+  overflow hidden
+  box-shadow 0 2px 8px rgba(0,0,0,0.06)
+
+// Blockquote enhancement
+blockquote
+  border-radius 0 8px 8px 0
+  margin 1rem 0
+
+// Table enhancement
+table
+  border-radius 8px
+  overflow hidden
+
+// Read more button
+.read-more a
+  border-radius 6px
+  transition all 0.3s ease
+
+  &:hover
+    transform translateX(3px)
+
+// Header banner text shadow
+.header-banner .title
+  text-shadow 0 2px 8px rgba(0,0,0,0.3)
+
+.header-banner .subtitle
+  text-shadow 0 1px 4px rgba(0,0,0,0.3)
+
+// Post meta spacing
+.post-meta
+  .post-meta-item
+    margin-right 12px
+
+// Heading with accent
+.post-content
+  h1, h2, h3
+    position relative
+
+  h2
+    padding-bottom 8px
+    border-bottom 2px solid var(--color-blue-200)
+
+  h3
+    padding-left 12px
+    border-left 3px solid $blue-light
+
+// Custom scrollbar
+::-webkit-scrollbar
+  width 8px
+  height 8px
+
+::-webkit-scrollbar-track
+  background var(--color-gray-200)
+  border-radius 4px
+
+::-webkit-scrollbar-thumb
+  background $blue-light
+  border-radius 4px
+  transition background 0.3s
+
+  &:hover
+    background $orange-dark
+
+// Footer enhancement
+footer
+  .footer-inner
+    padding 20px 0
+
+// Night mode smooth transition
+body
+  transition background-color 0.3s ease
+
+// ----FIXME: post-list hover animation
+.post-list-item
+  animation fadeInUp 0.5s ease both
+
+  for i in 0..9
+    &:nth-child({i})
+      animation-delay i * 0.05s
+
+@keyframes fadeInUp
+  from
+    opacity 0
+    transform translateY(20px)
+  to
+    opacity 1
+    transform translateY(0)
+
+// Tag style
+.tag
+  display inline-block
+  border-radius 4px
+  padding 2px 8px
+  margin 2px 4px
+  font-size 13px
+  background var(--color-gray-200)
+  transition all 0.3s ease
+
+  &:hover
+    background $blue-light
+    color #fff
+
+// Pagination enhancement
+.pagination
+  .page-number
+    border-radius 6px
+    transition all 0.3s ease
+
+// Image in post
+.post-content img
+  border-radius 8px
+  box-shadow 0 2px 8px rgba(0,0,0,0.08)
+
+// Back to top button animation
+.back-to-top
+  transition all 0.3s ease
+
+  &:hover
+    transform translateY(-3px)
