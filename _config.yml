@@ -101,5 +101,5 @@ theme:   hexo-theme-stun-master
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/qiuluo-love/qiuluo-love.github.io.git
+  repository: git@github.com:qiuluo-love/qiuluo-love.github.io.git
   branch: main
