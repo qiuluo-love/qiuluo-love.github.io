@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://qiuluo.github.io
+url: https://qiuluo-love.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,5 +101,5 @@ theme:   hexo-theme-stun-master
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/2104289339/qiuluo.github.io.git
+  repository: https://github.com/qiuluo-love/qiuluo-love.github.io.git
   branch: main
